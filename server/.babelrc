@@ -1,0 +1,29 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "app": "."
+                }
+            }
+        ],
+        [
+            "@babel/plugin-transform-runtime",
+            {
+              "regenerator": true
+            }
+          ]
+    ],
+    "compact": false
+}
