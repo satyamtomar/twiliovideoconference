@@ -1,0 +1,26 @@
+
+.video-chat-wpr {
+    max-width: 1650px;
+    margin: auto;
+    background: transparent;
+    border-radius: 13px;
+  }
+
+  .video-chat-wpr {
+    position: relative;
+  }
+  
+  .video-chat-wpr h4 {
+    color: white;
+    position: absolute;
+    background: #868080;
+    border-radius: 5px;
+    top: 20px;
+    left: 26px;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  .remote-participants .video-chat-wpr h4 {
+    display: none;
+  }
+      
