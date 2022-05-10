@@ -15,7 +15,7 @@ const VideoChat = () => {
   }, []);
   const handleSubmit = useCallback(async event => {
     event.preventDefault();
-    const data = await fetch('http://localhost:5001/video/token', {
+    const data = await fetch('http://localhost:5001/getRoomToken', {
       method: 'POST',
       body: JSON.stringify({
         identity: username,
@@ -25,7 +25,7 @@ const VideoChat = () => {
         'Content-Type': 'application/json'
       }
     }).then(res => res.json());
-    setToken(data.token);
+    setToken(data.data);
   }, [username, roomName]);
 
   const handleLogout = useCallback(event => {
