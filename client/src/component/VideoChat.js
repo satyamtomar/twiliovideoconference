@@ -15,7 +15,7 @@ const VideoChat = () => {
   }, []);
   const handleSubmit = useCallback(async event => {
     event.preventDefault();
-    const data = await fetch('http://localhost:5001/getRoomToken', {
+    const data = await fetch('http://localhost:5001/joinRoom', {
       method: 'POST',
       body: JSON.stringify({
         identity: username,
